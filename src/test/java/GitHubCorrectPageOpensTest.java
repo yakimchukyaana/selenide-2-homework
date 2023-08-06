@@ -20,8 +20,8 @@ public class GitHubCorrectPageOpensTest {
     void gitHubCorrectPageOpensTest() {
         //open github main page
         Selenide.open("https://github.com/");
-        //click on solutions
-        $(".Header-old").$(byText("Solutions")).click();
+        //hover on solutions
+        $(".Header-old").$(byText("Solutions")).hover();
         //open enterprise page
         $("[aria-labelledby='solutions-for-heading']").$(byText("Enterprise")).click();
         //check whether it has correct text
